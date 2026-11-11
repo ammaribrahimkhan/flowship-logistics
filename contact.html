@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | FlowShip Logistics</title>
+<meta name="description" content="Get in touch with FlowShip Logistics for a free dispatch consultation. Nationwide coverage, 24/7 dispatcher support.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+ 
+</div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><img src="images/logo.png" alt="FlowShip Logistics"></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="equipment.html">Equipment</a>
+    
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="nav-phone"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 
+       <a href="whatsapp://send?phone=923082535079" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">+92 3141308372</a>
+ 
+      </span>
+      <a href="onboarding.html" class="btn btn-primary btn-sm">Get Started</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <h1>Talk to a Dispatcher</h1>
+    <p>Tell us about your truck and lanes. A real dispatcher will follow up the same business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-col">
+
+    <div class="reveal">
+      <div class="eyebrow">Send a Message</div>
+      <h2>Request a Free Consultation</h2>
+      <div class="form-card">
+        <!-- ================= LIVE FORM HANDLING FRAMEWORK ================= -->
+
+<style>
+/* CSS Reset / Base Styling matching your design */
+#consultationForm * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#consultationForm {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Row wrapper for two-column inputs */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-row .field {
+    flex: 1;
+}
+
+/* Individual field container */
+.field {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Labels */
+.field label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Universal text, tel, email, and select fields inputs styling */
+#consultationForm input[type="text"],
+#consultationForm input[type="tel"],
+#consultationForm input[type="email"],
+#consultationForm select,
+#consultationForm textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#consultationForm textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Focus effects */
+#consultationForm input:focus,
+#consultationForm select:focus,
+#consultationForm textarea:focus {
+    border-color: #1d3557;
+    box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.1);
+}
+
+/* --- VALIDATION STYLING --- */
+
+/* Error styling for the target inputs */
+#consultationForm input.invalid-input {
+    border-color: #e63946;
+    background-color: #fff5f5;
+}
+
+#consultationForm input.invalid-input:focus {
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.15);
+}
+
+/* Clean text warnings under inputs */
+.error-msg {
+    display: none;
+    color: #e63946;
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* Submit Button Style */
+.btn-block {
+    width: 100%;
+    padding: 12px;
+    background: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-block:hover {
+    background: #15263f;
+}
+
+/* ===== PROFESSIONAL CENTER POPUP ===== */
+
+.form-popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(10, 20, 35, 0.68);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.form-popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-popup {
+    width: 100%;
+    max-width: 440px;
+
+    padding: 38px 34px 32px;
+
+    background: #ffffff;
+    border-radius: 17px;
+
+    text-align: center;
+
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.32);
+
+    transform: translateY(25px) scale(0.96);
+
+    transition: transform 0.25s ease;
+}
+
+.form-popup-overlay.show .form-popup {
+    transform: translateY(0) scale(1);
+}
+
+.popup-icon {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.success-popup .popup-icon {
+    color: #198754;
+    background: #e7f7ed;
+}
+
+.error-popup .popup-icon {
+    color: #dc3545;
+    background: #fde9eb;
+}
+
+.form-popup h2 {
+    margin: 0 0 12px;
+
+    color: #1d3557;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.form-popup p {
+    margin: 0 0 26px;
+
+    color: #5c6673;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.form-popup button {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #1d3557;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.form-popup button:hover {
+    background: #15263f;
+    transform: translateY(-1px);
+}
+</style>
+
+<!-- EmailJS SDK - this is what actually sends the confirmation copy -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("aSEGNBx4vOyz8rBq8"); // your EmailJS public key
+  })();
+</script>
+<form id="consultationForm" action="https://formspree.io/f/xlgqzalq" method="POST">
+  
+  <div class="form-row">
+    <div class="field"><label>Full Name</label><input type="text" name="full_name" id="full_name" required></div>
+    <div class="field"><label>Company Name</label><input type="text" name="company_name" id="company_name"></div>
+  </div>
+  
+  <div class="form-row">
+    <div class="field"><label>Phone Number</label><input type="tel" name="phone" id="phone" required></div>
+    <div class="field"><label>Email</label><input type="email" name="_replyto" id="email" required></div>
+  </div>
+  
+  <div class="form-row">
+    <!-- MC Number Field with unique IDs and custom warnings -->
+    <div class="field">
+        <label>MC Number</label>
+        <input type="text" name="mc_number" id="mc_number" placeholder="e.g. 123456">
+        <div class="error-msg" id="mc_error">MC Number must be exactly 6 digits.</div>
+    </div>
+    
+    <!-- DOT Number Field with unique IDs and custom warnings -->
+    <div class="field">
+        <label>DOT Number</label>
+        <input type="text" name="dot_number" id="dot_number" placeholder="e.g. 12345">
+        <div class="error-msg" id="dot_error">DOT Number must be exactly 5 digits.</div>
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="field">
+      <label>Equipment Type</label>
+      <select name="equipment_type" id="equipment_type">
+        <option>Dry Van</option>
+        <option>Reefer</option>
+        <option>Flatbed</option>
+        <option>Step Deck</option>
+        <option>Power Only</option>
+        <option>Hotshot</option>
+        <option>Box Truck</option>
+        <option>Sprinter Van</option>
+      </select>
+    </div>
+    <div class="field"><label>Fleet Size</label><input type="text" name="fleet_size" id="fleet_size" placeholder="e.g. 1 truck"></div>
+  </div>
+  
+  <div class="field"><label>Preferred Lanes</label><input type="text" name="preferred_lanes" id="preferred_lanes" placeholder="e.g. TX to GA, Midwest regional"></div>
+  <div class="field"><label>Message</label><textarea name="message" id="message"></textarea></div>
+  
+  <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send Message</button>
+</form>
+
+<!-- SUCCESS POPUP -->
+<div id="successPopup" class="form-popup-overlay success-popup">
+
+    <div class="form-popup">
+
+        <div class="popup-icon">✓</div>
+
+        <h2>Message Sent!</h2>
+
+        <p>
+            Your consultation request has been submitted successfully.
+            A confirmation copy has been sent to your email.
+        </p>
+
+        <button type="button" id="successPopupBtn">
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ERROR POPUP -->
+<div id="errorPopup" class="form-popup-overlay error-popup">
+
+    <div class="form-popup">
+
+        <div class="popup-icon">!</div>
+
+        <h2>Something Went Wrong</h2>
+
+        <p>
+            We could not submit your consultation request.
+            Please try again.
+        </p>
+
+        <button type="button" id="errorPopupBtn">
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+// Automatically parse the URL data when the contact form loads
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const passedEquipment = urlParams.get('equipment');
+    const passedLanes = urlParams.get('lanes');
+
+    // 1. If an equipment type was passed, auto-select it in the dropdown menu
+    if (passedEquipment) {
+        const equipmentSelect = document.getElementById('equipment_type');
+        if (equipmentSelect) {
+            equipmentSelect.value = passedEquipment;
+        }
+    }
+
+    // 2. If lanes were passed, inject them directly into the preferred lanes input field
+    if (passedLanes) {
+        const lanesInput = document.getElementById('preferred_lanes');
+        if (lanesInput) {
+            lanesInput.value = passedLanes;
+        }
+    }
+
+    // 3. Clean the URL bar instantly so a manual refresh won't re-populate the values
+    if (passedEquipment || passedLanes) {
+        // This removes the ?equipment=...&lanes=... from the URL without reloading the page
+        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
+    }
+});
+</script>
+
+<script>
+
+// Logic to sanitize input text and toggle error states
+function validateField(inputElement, errorElement, exactLength) {
+
+    // Remove letters and special characters
+    inputElement.value = inputElement.value.replace(/\D/g, '');
+
+    const value = inputElement.value;
+
+    // Empty fields are allowed
+    if (value.length === 0) {
+
+        inputElement.classList.remove('invalid-input');
+        errorElement.style.display = 'none';
+
+        return true;
+    }
+
+    // Check exact length
+    if (value.length !== exactLength) {
+
+        inputElement.classList.add('invalid-input');
+        errorElement.style.display = 'block';
+
+        return false;
+
+    } else {
+
+        inputElement.classList.remove('invalid-input');
+        errorElement.style.display = 'none';
+
+        return true;
+    }
+}
+
+
+// Get form elements
+const form = document.getElementById('consultationForm');
+
+const mcInput = document.getElementById('mc_number');
+const mcError = document.getElementById('mc_error');
+
+const dotInput = document.getElementById('dot_number');
+const dotError = document.getElementById('dot_error');
+
+
+// Get popup elements
+const successPopup =
+    document.getElementById('successPopup');
+
+const errorPopup =
+    document.getElementById('errorPopup');
+
+
+// Validate MC and DOT while typing
+mcInput.addEventListener(
+    'input',
+    () => validateField(mcInput, mcError, 6)
+);
+
+dotInput.addEventListener(
+    'input',
+    () => validateField(dotInput, dotError, 5)
+);
+
+
+// Validate again when leaving the field
+mcInput.addEventListener(
+    'blur',
+    () => validateField(mcInput, mcError, 6)
+);
+
+dotInput.addEventListener(
+    'blur',
+    () => validateField(dotInput, dotError, 5)
+);
+
+
+// Close success popup
+document
+    .getElementById('successPopupBtn')
+    .addEventListener('click', function () {
+
+        successPopup.classList.remove('show');
+
+    });
+
+
+// Close error popup
+document
+    .getElementById('errorPopupBtn')
+    .addEventListener('click', function () {
+
+        errorPopup.classList.remove('show');
+
+    });
+
+
+// Handle form submission
+form.addEventListener(
+    'submit',
+    async function(event) {
+
+        event.preventDefault();
+
+
+        // Validate MC and DOT
+        const isMcValid =
+            validateField(mcInput, mcError, 6);
+
+        const isDotValid =
+            validateField(dotInput, dotError, 5);
+
+
+        if (!isMcValid || !isDotValid) {
+
+            const firstInvalid =
+                !isMcValid
+                    ? mcInput
+                    : dotInput;
+
+            firstInvalid.focus();
+
+            return;
+        }
+
+
+        // Submit button loading state
+        const submitBtn =
+            document.getElementById('submitBtn');
+
+        const originalBtnText =
+            submitBtn.innerText;
+
+
+        submitBtn.innerText = 'Sending...';
+
+        submitBtn.disabled = true;
+
+
+        // Collect all form details
+        const templateParams = {
+
+            user_name:
+                document
+                    .getElementById('full_name')
+                    .value,
+
+            user_email:
+                document
+                    .getElementById('email')
+                    .value,
+
+            user_phone:
+                document
+                    .getElementById('phone')
+                    .value,
+
+            company_name:
+                document
+                    .getElementById('company_name')
+                    .value
+                || 'N/A',
+
+            mc_number:
+                document
+                    .getElementById('mc_number')
+                    .value
+                || 'N/A',
+
+            dot_number:
+                document
+                    .getElementById('dot_number')
+                    .value
+                || 'N/A',
+
+            equipment_type:
+                document
+                    .getElementById('equipment_type')
+                    .value
+                || 'N/A',
+
+            fleet_size:
+                document
+                    .getElementById('fleet_size')
+                    .value
+                || 'N/A',
+
+            preferred_lanes:
+                document
+                    .getElementById('preferred_lanes')
+                    .value
+                || 'N/A',
+
+            message:
+                document
+                    .getElementById('message')
+                    .value
+                || 'N/A'
+        };
+
+
+        // Send customer confirmation through EmailJS
+        try {
+
+            await emailjs.send(
+
+                'service_8eh3brq',
+
+                'template_byoak1h',
+
+                templateParams
+
+            );
+
+            console.log(
+                'Customer confirmation email sent successfully'
+            );
+
+        } catch (error) {
+
+            console.error(
+                'Customer confirmation email failed:',
+                error
+            );
+
+        }
+
+
+        // Send complete form details to FlowShip
+        const formData =
+            new FormData(form);
+
+
+        try {
+
+            const response =
+                await fetch(
+
+                    form.action,
+
+                    {
+
+                        method:
+                            form.method,
+
+                        body:
+                            formData,
+
+                        headers: {
+
+                            'Accept':
+                                'application/json'
+
+                        }
+
+                    }
+
+                );
+
+
+            if (response.ok) {
+
+                // Clear form
+                form.reset();
+
+
+                // Show professional center popup
+                successPopup
+                    .classList
+                    .add('show');
+
+
+            } else {
+
+                throw new Error(
+                    'Formspree rejected the submission.'
+                );
+
+            }
+
+
+        } catch (error) {
+
+            console.error(
+                'Form submission failed:',
+                error
+            );
+
+
+            // Show professional error popup
+            errorPopup
+                .classList
+                .add('show');
+
+
+        } finally {
+
+            // Restore button
+            submitBtn.innerText =
+                originalBtnText;
+
+            submitBtn.disabled =
+                false;
+
+        }
+
+    }
+);
+
+</script>
+
+
+
+
+        <div class="form-success">Thanks, your message has been received. A confirmation has been sent to your email, and a dispatcher will reach out shortly.</div>
+        <div class="form-error">Something went wrong sending that automatically. Please use the "Send on WhatsApp" button above instead, or reach us directly at flowshiplogisticsusa@gmail.com.</div>
+        <p class="form-note">By submitting, you agree to be contacted by FlowShip Logistics regarding dispatch services.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <img src="images\consultation.webp" alt="FlowShip contact support" style="margin-bottom:32px;">
+      <div class="grid" style="gap:18px;">
+<div class="card" style="padding:22px 26px;">
+  
+  <!-- Clickable Icon Wrapper -->
+  <div class="icon">
+    <a href="whatsapp://send?phone=923082535079" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="color: inherit; text-decoration: none;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </a>
+  </div>
+  
+  <!-- Clickable Heading Wrapper -->
+  <h3 style="font-size:16px; margin: 10px 0 5px 0;">
+ <a href="whatsapp://send?phone=923082535079" aria-label="WhatsApp">+92 3141308372</a>
+  </h3>
+  
+  <!-- Clickable Number Wrapper -->
+ 
+  Mon to Fri, 8AM to 7PM EST
+</div>
+<div class="card" style="padding:22px 26px;">
+  
+  <!-- Icon Control Grid Target -->
+  <div class="icon" style="cursor: pointer;" onclick="executeSmartEmailRouting('flowshiplogisticsusa@gmail.com')">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 4h16v16H4z" opacity="0"/>
+      <path d="M22 6l-10 7L2 6"/>
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+    </svg>
+  </div>
+  
+  <!-- Main Header Text Target -->
+  <h3 style="font-size:16px; margin: 10px 0 5px 0; cursor: pointer; user-select: none;" onclick="executeSmartEmailRouting('flowshiplogisticsusa@gmail.com')">
+    Email Us
+  </h3>
+  
+  <!-- Interactive Text Parameter Target Address -->
+  <p style="margin: 0; cursor: pointer;" onclick="executeSmartEmailRouting('flowshiplogisticsusa@gmail.com')">
+    <span style="font-weight: 500; color: inherit; text-decoration: none;">flowshiplogisticsusa@gmail.com</span>
+  </p>
+  
+</div>
+
+<script>
+function executeSmartEmailRouting(targetDestinationEmail) {
+    const subject = encodeURIComponent('Inquiry from FlowShip Logistics website');
+    const gmailComposeUrl =
+        "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+        encodeURIComponent(targetDestinationEmail) +
+        "&su=" + subject;
+    window.open(gmailComposeUrl, '_blank');
+    window.location.href = "mailto:" + targetDestinationEmail + "?subject=" + subject;
+}
+</script>
+
+
+
+
+
+
+        <div class="card" style="padding:22px 26px;">
+          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3 style="font-size:16px;">Service Area</h3>
+          <p>Nationwide across all 48 contiguous U.S. states.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h3>Ready to onboard instead?</h3>
+        <p>Skip ahead and submit your carrier documents directly.</p>
+      </div>
+      <a href="onboarding.html" class="btn btn-primary">Carrier Onboarding</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER HTML STRUCTURE ================= -->
+<!-- ================= FOOTER HTML STRUCTURE ================= -->
+
+<div class="footer-topbar">
+
+    <div class="container footer-top-content">
+
+        <div class="footer-top-left">
+
+            <h2>AVAILABLE 24/7 — EVERY MILE, EVERY LOAD.</h2>
+
+            <p>
+                Licensed. Bonded. Insured. FMCSA Registered.
+            </p>
+
+        </div>
+
+        <div class="footer-top-right">
+
+
+            <a href="whatsapp://send?phone=923082535079"
+               class="footer-phone-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                +92 3141308372
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <!-- LEFT -->
+
+        <div class="footer-brand">
+
+            <img src="images/logo.png" alt="FlowShip Logistics">
+
+            <p>
+                The backbone of American transport.
+                US-based fleet management, truck dispatching,
+                and brokerage services built for serious operators.
+            </p>
+
+            <div class="footer-contact">
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Nationwide — Serving 48 States
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+
+                      <a href="whatsapp://send?phone=923082535079" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">+92 3141308372</a>
+ 
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <a href="#"
+                       onclick="executeSmartEmailRouting('flowshiplogisticsusa@gmail.com'); return false;">
+                        flowshiplogisticsusa@gmail.com
+                    </a>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                    Mon–Fri | 8AM – 7PM EST
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-col">
+
+            <h4>Quick Links</h4>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="equipment.html">
+                        Equipment
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- SERVICES -->
+
+        <div class="footer-col">
+
+            <h4>Our Services</h4>
+
+            <ul>
+
+                <li>
+                    <a href="services.html#dispatching">
+                        Truck Dispatching
+                    </a>
+                </li>
+    <li>
+                    <a href="services.html#dispatching">
+                       Load Booking
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                        Rate Negotiation
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                        Broker Communication
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                        Route Planning
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                        Paperwork Management
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                        Factoring Assistance
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                        Safety & Compliance Support
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                       Single Point of Contact
+                    </a>
+                </li>   
+                <li>
+                    <a href="services.html#dispatching">
+                       Hazmat Certified
+                    </a>
+                </li>    <li>
+                    <a href="services.html#dispatching">
+                       Straight shipper loads
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- CERTIFICATIONS -->
+
+        <div class="footer-col">
+
+            <h4>Certifications</h4>
+
+            <ul class="footer-certifications">
+
+                <li>
+
+                    <strong>FMCSA Registered</strong>
+
+                    <span>
+                        Nationwide Operations
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <strong>Licensed &amp; Bonded</strong>
+
+                    <span>
+                        Fully Insured
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <strong>48-State Coverage</strong>
+
+                    <span>
+                        Reliable Freight Services
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <strong>Professional Dispatch</strong>
+
+                    <span>
+                        Dedicated Support
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+
+        <div>
+
+            © 2026 FlowShip Logistics, LLC.
+            All rights reserved.
+
+        </div>
+
+        <div class="legal">
+
+            Proudly American. Built for the road.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/script.js"></script>
+<script>
+// Automatically parse the URL data when the contact form loads
+window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const passedEquipment = urlParams.get('equipment');
+    const passedLanes = urlParams.get('lanes');
+
+    // If an equipment type was passed, auto-select it in the dropdown menu
+    if (passedEquipment) {
+        const equipmentSelect = document.getElementById('equipment_type');
+        if (equipmentSelect) {
+            equipmentSelect.value = passedEquipment;
+        }
+    }
+
+    // If lanes were passed, inject them directly into the preferred lanes input field
+    if (passedLanes) {
+        const lanesInput = document.getElementById('preferred_lanes');
+        if (lanesInput) {
+            lanesInput.value = passedLanes;
+        }
+    }
+});
+</script>
+
+
+
+</body>
+
+</html>
